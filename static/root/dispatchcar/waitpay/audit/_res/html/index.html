@@ -1,0 +1,22 @@
+<div class="content-tab audit-lists">
+    <ul class="table-two" >
+        <li class="list-head">
+            <span></span>
+            <span title="职位名称">职位名称</span>
+            <span title="审核人">审核人</span>
+            <span title="审核意见">审核意见</span>
+            <span title="审核时间">审核时间</span>
+            <span title="是否通过">是否通过</span>
+            <span></span>
+        </li>
+        <li class="list-body" ng-repeat="lists in list1">
+            <span></span>
+            <span title="{{::lists.position}}">{{::lists.position}}</span>
+            <span title="{{::lists.auditUser}}">{{::lists.auditUser}}</span>
+            <span title="{{::lists.suggestion}}">{{::lists.suggestion}}</span>
+            <span title="{{::lists.auditTime}}">{{::lists.auditTime}}</span>
+            <span title="{{::lists.auditResult|pay}}">{{::lists.auditResult|pay}}</span>
+            <span></span>
+        </li>
+    </ul>
+</div>

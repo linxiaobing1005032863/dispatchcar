@@ -1,0 +1,144 @@
+<div class="content-tab audit-lists">
+    <ul class="table">
+        <li class="list-head">
+            <span title="出车单号">出车单号</span>
+            <span title="司机名称">司机名称</span>
+            <span title="是否为本公司人员出车">是否为本公司人员出车</span>
+            <span title="用车人">用车人</span>
+            <span title="员工编号">员工编号</span>
+            <span title="所属地区">所属地区</span>
+            <span title="所属项目组">所属项目组</span>
+            <span title="是否立项">是否立项</span>
+            <span title="项目名称">项目名称</span>
+            <span title="科目类型">科目类型</span>
+        </li>
+        <li class="list-body">
+            <span title="{{::list.number}}">{{::list.number}}</span>
+            <span title="{{::list.driver}}">{{::list.driver}}</span>
+            <span title="{{::list.companyDispatch|pay}}">{{::list.companyDispatch|pay}}</span>
+            <span title="{{::list.carUser}}">{{::list.carUser}}</span>
+            <span title="{{::list.userNumber}}">{{::list.userNumber}}</span>
+            <span title="{{::list.area}}">{{::list.area}}</span>
+            <span title="{{::list.group}}">{{::list.group}}</span>
+            <span title="{{::list.projectApproval|pay}}">{{::list.projectApproval|pay}}</span>
+            <span title="{{::list.project}}">{{::list.project}}</span>
+            <span title="{{::list.acctype|addCover}}">{{::list.acctype|addCover}}</span>
+        </li>
+        <li class="list-head">
+            <span title="出车日期">出车日期</span>
+            <span title="出车开始时间">出车开始时间</span>
+            <span title="出车结束时间">出车结束时间</span>
+            <span title="是否午休">是否午休</span>
+            <span title="加班时长">加班时长</span>
+            <span title="用车事由">用车事由</span>
+            <span title="用车随同人员">用车随同人员</span>
+            <span title="车牌号码">车牌号码</span>
+            <span title="所用油卡编号">所用油卡编号</span>
+            <span title="是否开空调">是否开空调</span>
+        </li>
+        <li class="list-body">
+            <span title="{{::list.dispatchDate}}">{{::list.dispatchDate}}</span>
+            <span title="{{::list.startTime}}">{{::list.startTime}}</span>
+            <span title="{{::list.endTime}}">{{::list.endTime}}</span>
+            <span title="{{::list.siesta|pay}}">{{::list.siesta|pay}}</span>
+            <span title="{{::list.overWorkTime}}">{{::list.overWorkTime}}</span>
+            <span title="{{::list.dispatchReason}}">{{::list.dispatchReason}}</span>
+            <span title="{{::list.accompanyUser}}">{{::list.accompanyUser}}</span>
+            <span title="{{::list.carNumber}}">{{::list.carNumber}}</span>
+            <span title="{{::list.oilCardNumber}}">{{::list.oilCardNumber}}</span>
+            <span title="{{::list.aircondition|pay}}">{{::list.aircondition|pay}}</span>
+        </li>
+        <li class="list-head">
+            <span title="是否市内">是否市内</span>
+            <span title="当天是否加油">当天是否加油</span>
+            <span title="补加油说明">补加油说明</span>
+            <span title="补加油量">补加油量</span>
+            <span title="补加油费">补加油费</span>
+            <span title="欠油说明">欠油说明</span>
+            <span title="欠油量">欠油量</span>
+            <span title="欠油费">欠油费</span>
+            <span title="加油时间">加油时间</span>
+            <span title="实际加油量">实际加油量</span>
+        </li>
+        <li class="list-body">
+            <span title="{{::list.downtown|pay}}" >{{::list.downtown|pay}}</span>
+            <span title="{{::list.addOil|pay}}">{{::list.addOil|pay}}</span>
+            <span title="{{::list.addOilExplain}}">{{::list.addOilExplain}}</span>
+            <span title="{{::list.addOilAmount}}">{{::list.addOilAmount}}</span>
+            <span title="{{::list.overWorkCost}}">{{::list.overWorkCost}}</span>
+            <span title="{{::list.oweOilExplain}}">{{::list.oweOilExplain}}</span>
+            <span title="{{::list.addOilAmount}}">{{::list.addOilAmount}}</span>
+            <span title="{{::list.lessOilFee}}">{{::list.lessOilFee}}</span>
+            <span title="{{::list.addOilTime}}">{{::list.addOilTime}}</span>
+            <span title="{{::list.addOilAmount}}">{{::list.addOilAmount}}</span>
+        </li>
+        <li class="list-head">
+            <span title="油卡余额">油卡余额</span>
+            <span title="当天油价">当天油价</span>
+            <span title="任务下达人">任务下达人</span>
+            <span title="计划任务数量">计划任务数量</span>
+            <span title="完成任务数量">完成任务数量</span>
+            <span title="出车开始里程数">出车开始里程数</span>
+            <span title="出车结束里程数">出车结束里程数</span>
+            <span title="总里程数">总里程数</span>
+            <span title="GPS轨迹里程数">GPS轨迹里程数</span>
+            <span title="停车费">停车费</span>
+        </li>
+        <li class="list-body">
+            <span title="{{::list.oilCardBalance}}">{{::list.oilCardBalance}}</span>
+            <span title="{{::list.oilPrice}}">{{::list.oilPrice}}</span>
+            <span title="{{::list.principal}}">{{::list.principal}}</span>
+            <span title="{{::list.planTaskAmount}}">{{::list.planTaskAmount}}</span>
+            <span title="{{::list.finishTaskAmount}}">{{::list.finishTaskAmount}}</span>
+            <span title="{{::list.startMileage}}">{{::list.startMileage}}</span>
+            <span title="{{::list.endMileage}}">{{::list.endMileage}}</span>
+            <span title="{{::list.mileageSubtract}}">{{::list.mileageSubtract}}</span>
+            <span title="{{::list.mileageOfGPS}}">{{::list.mileageOfGPS}}</span>
+            <span title="{{::list.parkCost}}">{{::list.parkCost}}</span>
+        </li>
+        <li class="list-head">
+            <span title="过路费">过路费</span>
+            <span title="餐补费">餐补费</span>
+            <span title="司机的评价">司机的评价</span>
+            <span title="小票附件">小票附件</span>
+            <span title="项目模块负责人">项目模块负责人</span>
+            <span title="项目模块负责人意见">项目模块负责人意见</span>
+            <span title="是否通过">是否通过</span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </li>
+        <li class="list-body">
+            <span title="{{::list.roadCost}}">{{::list.roadCost}}</span>
+            <span title="{{::list.mealCost}}">{{::list.mealCost}}</span>
+            <span title="{{::list.evaluatedriver|driver}}">{{::list.evaluatedriver|driver}}</span>
+            <span title="{{::list.receipt|pay}}">{{::list.receipt|pay}}</span>
+            <span title="{{::list.projectCharge}}">{{::list.projectCharge}}</span>
+            <span title="{{::list.projectChargeIdea}}">{{::list.projectChargeIdea}}</span>
+            <span title="{{::list.ifPass|pay}}">{{::list.ifPass|pay}}</span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </li>
+    </ul>
+    <ul class="table-two">
+        <li class="list-head">
+            <span></span>
+            <span title="职位名称">职位名称</span>
+            <span title="审核人">审核人</span>
+            <span title="审核意见">审核意见</span>
+            <span title="审核时间">审核时间</span>
+            <span title="是否通过">是否通过</span>
+            <span></span>
+        </li>
+        <li class="list-body"  ng-repeat="lists in list1">
+            <span></span>
+            <span title="{{::lists.position}}">{{::lists.position}}</span>
+            <span title="{{::lists.auditUser}}">{{::lists.auditUser}}</span>
+            <span title="{{::lists.suggestion}}">{{::lists.suggestion}}</span>
+            <span title="{{::lists.auditTime}}">{{::lists.auditTime}}</span>
+            <span title="{{::lists.auditResult|pay}}">{{::lists.auditResult|pay}}</span>
+            <span></span>
+        </li>
+    </ul>
+</div>

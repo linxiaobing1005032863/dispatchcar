@@ -1,0 +1,7 @@
+{
+  "default":"dev",
+  "dev": {
+    "rurl": "http://172.17.205.68:5260",
+    "vurl": "https://version.issp.bjike.com:8080"
+  }
+}

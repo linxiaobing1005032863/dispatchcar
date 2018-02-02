@@ -1,0 +1,58 @@
+<div class="content-tab audit-lists">
+    <ul class="table">
+        <li class="list-head">
+            <span title="用车人">用车人</span>
+            <span title="出车日期">出车日期</span>
+            <span title="出车单号">出车单号</span>
+            <span title="修改日期">修改日期</span>
+            <span title="修改人">修改人</span>
+            <span title="内容">内容</span>
+            <span title="问题类型">问题类型</span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </li>
+        <li class="list-body">
+            <span title="{{::list.carUser}}" >{{::list.carUser}}</span>
+            <span  title="{{::list.dispatchDate}}">{{::list.dispatchDate}}</span>
+            <span  title="{{::list.number}}">{{::list.number}}</span>
+            <span  title="{{::list.modifyDate}}">{{::list.modifyDate}}</span>
+            <span title="{{::list.modifier}}">{{::list.modifier}}</span>
+            <span title="{{::list.content}}" >{{::list.content}}</span>
+            <span  title="{{::list.problemType}}">{{::list.problemType}}</span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </li>
+    </ul>
+    <div class="content-input add" verify-scope="tipStyle: 1">
+        <div class="input-list">
+            <section>
+                <ul>
+                    <li class="required">
+                        <label><i><img src="/images/mandatory.png"></i><em>是否解决</em></label>
+                        <select class="sele" ng-model="ifSolve" ng-verify="option:0">
+                            <option value="">请选择</option>
+                            <option ng-value=true>是</option>
+                            <option ng-value="false">否</option>
+                        </select>
+                    </li>
+                    <li class="required">
+                        <label><i><img src="/images/mandatory.png"></i><em>解决方案</em></label>
+                        <input type="text"  ng-verify="{}" ng-model="solution">
+                    </li>
+                     <li class="required">
+                    <label><i><img src="/images/mandatory.png"></i><em>解决时间</em></label>
+                    <input type="text" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" class="add_image solutionTime" ng-model="solutionTime" >
+
+                    </li>
+                    
+                </ul>
+            </section>
+        </div>
+        <p class="dataBottom">
+            <span class="imPrompt"><i><img src="/images/prompt.png"></i>带有<i><img src="/images/mandatory.png"></i>的为必填项</span>
+            <button ng-verify="{control:'myform'}" ng-click="infoEditFun()">提交</button>
+        </p>
+    </div>
+</div>

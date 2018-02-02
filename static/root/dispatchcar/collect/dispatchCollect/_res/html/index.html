@@ -1,0 +1,55 @@
+<div class="collect">
+    <div class="sum-select">
+        <ul>
+            <li class="required">
+                <label><i><img src="/images/mandatory.png"></i><em>汇总日期间隔 </em></label>
+                <select class="sele select1" ng-model="type">
+                    <option value="">请选择</option>
+                    <option value="DAY">日</option>
+                    <option value="WEEK">周</option>
+                    <option value="MONTH">月</option>
+                    <option value="QUARTER">季度</option>
+                    <option value="YEAR">年度</option>
+                </select>
+            </li>
+            <li class="{{type?'a3':'a1'}}"  ng-click="collect()">汇总</li>
+        </ul>
+    </div>
+    <ul class="sum-list">
+        <li class="sum-thead">
+            <span title="地区">地区</span>
+            <span title="项目组">项目组</span>
+            <span title="项目名称">项目名称</span>
+            <span title="本公司用车量">本公司用车量</span>
+            <span title="非本公司用车量">非本公司用车量</span>
+            <span title="本间隔出车量">本间隔出车量</span>
+            <span title="上一间隔出车量">上一间隔出车量</span>
+            <span title="出车量差异对比">出车量差异对比</span>
+            <span title="租车费">租车费</span>
+            <span title="停车费">停车费</span>
+            <span title="过路费">过路费</span>
+            <span title="餐补费">餐补费</span>
+            <span title="本间隔费用">本间隔费用</span>
+            <span title="上一间隔费用">上一间隔费用</span>
+            <span title="费用差异对比">费用差异对比</span>
+
+        </li>
+        <li class="sum-tbody li1" ng-repeat="list in summaryLists">
+            <span title="{{list.area}}" class="span1">{{list.area}}</span>
+            <span title="{{list.group}}" class="Sps">{{list.group}}</span>
+            <span title="{{list.project}}" class="Sps">{{list.project}}</span>
+            <span title="{{list.companyDispatch}}" class="Sps">{{list.companyDispatch}}</span>
+            <span title="{{list.uncompanyDispatch}}" class="Sps">{{list.uncompanyDispatch}}</span>
+            <span title="{{list.currentDispatch}}" class="Sps">{{list.currentDispatch}}</span>
+            <span title="{{list.lastDispatch}}" class="Sps">{{list.lastDispatch}}</span>
+            <span title="{{list.dispatchSubtract}}" class="Sps">{{list.dispatchSubtract}}</span>
+            <span title="{{list.leaseCarCost}}" class="Sps">{{list.leaseCarCost}}</span>
+            <span title="{{list.parkCarCost}}" class="Sps">{{list.parkCarCost}}</span>
+            <span title="{{list.roadCost}}" class="Sps">{{list.roadCost}}</span>
+            <span title="{{list.mealCost}}" class="Sps">{{list.mealCost}}</span>
+            <span title="{{list.currentCost}}" class="Sps">{{list.currentCost}}</span>
+            <span title="{{list.lastCost}}" class="Sps">{{list.lastCost}}</span>
+            <span title="{{list.costSubtract}}" class="Sps">{{list.costSubtract}}</span>
+        </li>
+    </ul>
+</div>

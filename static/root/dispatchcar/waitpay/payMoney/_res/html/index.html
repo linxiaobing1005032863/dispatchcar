@@ -1,0 +1,43 @@
+<div class="collect">
+    <div class="collect-select">
+        <ul>
+            <li class="required">
+                <label><i><img src="/images/mandatory.png"></i><em>预计支付开始时间  </em></label>
+                <input type="text" onClick="laydate({istime: true, format: 'YYYY-MM-DD'})" class="inputter startTime" ng-model="startTime" >
+            </li>
+            <li class="required">
+                <label><i><img src="/images/mandatory.png"></i><em>预计支付结束时间 </em></label>
+                <input type="text" onClick="laydate({istime: true, format: 'YYYY-MM-DD'})" class="inputter endTime" ng-model="endTime" >
+            </li>
+            <button ng-click="collect()">汇总</button>
+        </ul>
+
+    </div>
+    <ul class="sum-list">
+        <li class="sum-thead">
+            <span title="司机名称">司机名称</span>
+            <span title="出车日期">出车日期</span>
+            <span title="租车费">租车费</span>
+            <span title="加班单价">加班单价</span>
+            <span title="加班时长">加班时长</span>
+            <span title="加班费">加班费</span>
+            <span title="停车费">停车费</span>
+            <span title="过路费">过路费</span>
+            <span title="餐费补贴">餐费补贴</span>
+            <span title="合计">合计</span>
+
+        </li>
+        <li  class="sum-tbody li1" ng-repeat="list in summaryLists">
+            <span title="{{list.driver}}" class="span1">{{list.driver}}</span>
+            <span title="{{list.payDate}}">{{list.payDate}}</span>
+            <span title="{{list.carRentalCost}}">{{list.carRentalCost}}</span>
+            <span title="{{list.overUnitCost}}">{{list.overUnitCost}}</span>
+            <span title="{{list.overWorkTime}}">{{list.overWorkTime}}</span>
+            <span title="{{list.overWorkCost}}">{{list.overWorkCost}}</span>
+            <span title="{{list.parkCost}}">{{list.parkCost}}</span>
+            <span title="{{list.roadCost}}">{{list.roadCost}}</span>
+            <span title="{{list.mealCost}}">{{list.mealCost}}</span>
+            <span title="{{list.totalCost}}">{{list.totalCost}}</span>
+        </li>
+    </ul>
+</div>
